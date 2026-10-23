@@ -1,0 +1,44 @@
+{
+  "name": "@ars2k03/vercel-deploy",
+  "version": "1.0.0",
+  "description": "Smart 1-click cloud deploy to Vercel with auto Git sync and production environment variable diffing",
+  "type": "module",
+  "license": "MIT",
+  "author": "ars2k03",
+  "bin": {
+    "vercel-deploy": "dist/cli.js",
+    "ars-vercel-deploy": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ars2k03/ars-vercel-deploy.git"
+  },
+  "homepage": "https://github.com/ars2k03/ars-vercel-deploy#readme",
+  "bugs": {
+    "url": "https://github.com/ars2k03/ars-vercel-deploy/issues"
+  },
+  "keywords": [
+    "vercel",
+    "deploy",
+    "cli",
+    "git-sync",
+    "nextjs",
+    "frontend",
+    "devops",
+    "automation"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
